@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nutrisysteam.nutrisys.MainActivity">
+<!--    <item-->
+<!--        android:id="@+id/action_settings"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/action_settings"-->
+<!--        app:showAsAction="never" />-->
+
+    <item android:title="Fitness"
+        android:id="@+id/fitness_screen"
+        android:icon="@drawable/baseline_fitness_24"
+        />
+
+    <item android:title="Nutrition"
+        android:id="@+id/nutrition_screen"
+        android:icon="@drawable/baseline_nutritiom_24"
+        />
+
+    <item android:title="Profile"
+        android:id="@+id/profile_screen"
+        android:icon="@drawable/baseline_profile_24"
+        />
+</menu>
