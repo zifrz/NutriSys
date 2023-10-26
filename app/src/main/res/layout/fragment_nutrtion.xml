@@ -50,7 +50,6 @@
             android:id="@+id/popularItemsScrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fadingEdge="horizontal"
             android:scrollbars="none"
             app:layout_constraintTop_toBottomOf="@+id/popularItems"
             tools:layout_editor_absoluteX="28dp">
@@ -226,10 +225,8 @@
             android:id="@+id/commonDeficienciesScrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fadingEdge="horizontal"
             android:scrollbars="none"
-            app:layout_constraintTop_toBottomOf="@+id/commonDeficiencies"
-            tools:layout_editor_absoluteX="28dp">
+            app:layout_constraintTop_toBottomOf="@+id/commonDeficiencies">
 
             <LinearLayout
                 android:layout_width="wrap_content"
