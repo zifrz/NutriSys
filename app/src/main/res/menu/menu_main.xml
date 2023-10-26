@@ -10,16 +10,16 @@
 
     <item android:title="Fitness"
         android:id="@+id/fitness_screen"
-        android:icon="@drawable/baseline_fitness_24"
+        android:icon="@drawable/fitness_24px"
         />
 
     <item android:title="Nutrition"
         android:id="@+id/nutrition_screen"
-        android:icon="@drawable/baseline_nutritiom_24"
+        android:icon="@drawable/nutrition_24px"
         />
 
     <item android:title="Profile"
         android:id="@+id/profile_screen"
-        android:icon="@drawable/baseline_profile_24"
+        android:icon="@drawable/profile_24px"
         />
 </menu>
