@@ -11,22 +11,40 @@ import java.util.zip.Inflater
 
 class ProfileFragment : Fragment() {
 
-    lateinit var binding : FragmentProfileBinding
+    lateinit var binding: FragmentProfileBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
 
         binding = FragmentProfileBinding.inflate(inflater, container, false)
 
+        binding.myProfile.setOnClickListener {
+            Toast.makeText(context?.applicationContext, "My Profile", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.settings.setOnClickListener {
+            Toast.makeText(context?.applicationContext, "Settings", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.feedback.setOnClickListener {
+            Toast.makeText(context?.applicationContext, "Feedback", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.faq.setOnClickListener {
+            Toast.makeText(context?.applicationContext, "FAQ", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.aboutUs.setOnClickListener {
+            Toast.makeText(context?.applicationContext, "About Us", Toast.LENGTH_SHORT).show()
+        }
 
         binding.profileScreenText.setOnClickListener {
-
-            Toast.makeText(context?.applicationContext, "This is Toast from Profile", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                context?.applicationContext, "This is Toast from Profile", Toast.LENGTH_SHORT
+            ).show()
         }
+
         return binding.root
     }
-
-
 }
