@@ -26,6 +26,8 @@ class FitnessFragment : Fragment() {
 
 
 
+
+
         return binding.root
     }
 
