@@ -12,6 +12,12 @@
         android:theme="@style/Theme.NutriSys"
         tools:targetApi="31">
         <activity
+            android:name=".DetailExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashscreenActivity"
             android:exported="true">
             <intent-filter>
