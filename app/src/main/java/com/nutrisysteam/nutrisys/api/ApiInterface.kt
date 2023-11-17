@@ -10,7 +10,7 @@ interface ApiInterface {
     fun getCalisthenicsData() : Call<Exercise>
 
     @GET("exercises/WEIGHT LOSS")
-    fun getDataWeightLossData() : Call<Exercise>
+    fun getWeightLossData() : Call<Exercise>
 
     @GET("exercises/MUSCLE GAIN")
     fun getMuscleGainData() : Call<Exercise>
