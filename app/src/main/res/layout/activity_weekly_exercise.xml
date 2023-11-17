@@ -25,19 +25,18 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/weekly_card"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_marginVertical="16dp"
             app:cardElevation="1dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/screenHeader_myWorkouts"
             app:strokeWidth="0dp">
 
-            <TextView
+            <CalendarView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp"
-                android:text="This Week"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="4dp"
                 android:textSize="20sp" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -274,10 +273,7 @@
         </TableLayout>
 
 
-
     </LinearLayout>
-
-    
 
 
 </ScrollView>
