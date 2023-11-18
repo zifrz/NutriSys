@@ -45,4 +45,29 @@
     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cal_mon">Chest, Pull-up</string>
+    <string name="cal_tue">Body weight Squat, Plank</string>
+    <string name="cal_wed">L-sit, Dips</string>
+    <string name="cal_thu">Burpees, Handstand Push-up</string>
+    <string name="cal_fir">Pistol Squat, Inverted Row</string>
+    <string name="cal_sat">mountain Climbers, Russian Twist</string>
+    <string name="cal_sun">Jumping Lunges, Hanging Leg Raise</string>
+
+    <string name="mg_mon">Squat, Dead lift</string>
+    <string name="mg_tue">Bench Press, Overhead Press</string>
+    <string name="mg_wed">Barbell Rows, Lunges</string>
+    <string name="mg_thu">Pull-Ups, Chin-Ups</string>
+    <string name="mg_fir">Dumbbell Flyes,Barbell Curl</string>
+    <string name="mg_sat">Triceps Dips, Leg Press</string>
+    <string name="mg_sun">Lat Pull down,Calf Raises</string>
+
+    <string name="wl_mon">Running,Jump Rope</string>
+    <string name="wl_tue">Burpees,Mountain Climbers</string>
+    <string name="wl_wed">Full body,Cycling</string>
+    <string name="wl_thu">Swimming, Rowing</string>
+    <string name="wl_fir">Jumping Jacks,Boxing</string>
+    <string name="wl_sat">Dancing, Elliptical Trainer</string>
+    <string name="wl_sun">Stair Climbing,Walking</string>
+
 </resources>

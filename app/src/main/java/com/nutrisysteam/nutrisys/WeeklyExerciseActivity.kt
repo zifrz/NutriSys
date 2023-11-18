@@ -33,10 +33,40 @@ class WeeklyExerciseActivity : AppCompatActivity() {
             "MUSCLE_GAIN" -> binding.screenHeaderWeeklyExercise.text = "Muscle Gain"
             else -> binding.screenHeaderWeeklyExercise.text = "Exercise"
         }
+        setWeeklyData(value.toString())
 
 
 
+    }
 
+    private fun setWeeklyData(value : String) {
+        if(value== CALISTHENICS) {
+            binding.monEx.text = getString(R.string.cal_mon)
+            binding.tueEx.text = getString(R.string.cal_tue)
+            binding.wedEx.text = getString(R.string.cal_wed)
+            binding.thruEx.text = getString(R.string.cal_thu)
+            binding.friEx.text = getString(R.string.cal_fir)
+            binding.satEx.text = getString(R.string.cal_sat)
+            binding.sunEx.text = getString(R.string.cal_sun)
+        }
+        if(value== WEIGHT_LOSS) {
+            binding.monEx.text = getString(R.string.wl_mon)
+            binding.tueEx.text = getString(R.string.wl_tue)
+            binding.wedEx.text = getString(R.string.wl_wed)
+            binding.thruEx.text = getString(R.string.wl_thu)
+            binding.friEx.text = getString(R.string.wl_fir)
+            binding.satEx.text = getString(R.string.wl_sat)
+            binding.sunEx.text = getString(R.string.wl_sun)
+        }
+        if(value== MUSCLE_GAIN) {
+            binding.monEx.text = getString(R.string.mg_mon)
+            binding.tueEx.text = getString(R.string.mg_tue)
+            binding.wedEx.text = getString(R.string.mg_wed)
+            binding.thruEx.text = getString(R.string.mg_thu)
+            binding.friEx.text = getString(R.string.mg_fir)
+            binding.satEx.text = getString(R.string.mg_sat)
+            binding.sunEx.text = getString(R.string.mg_sun)
+        }
     }
 
     override fun onDestroy() {

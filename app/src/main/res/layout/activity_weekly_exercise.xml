@@ -73,6 +73,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/mon_ex"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -100,6 +101,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/tue_ex"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -135,6 +137,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/wed_ex"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -162,6 +165,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/thru_ex"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -197,6 +201,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/fri_ex"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -224,6 +229,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/sat_ex"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -259,6 +265,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/sun_ex"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
