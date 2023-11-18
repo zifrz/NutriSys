@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="28dp"
-    android:paddingVertical="32dp"
     android:scrollbars="none"
     tools:context=".WeeklyExerciseActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="32dp">
 
         <TextView
             android:id="@+id/screenHeader_weekly_exercise"
@@ -40,28 +40,26 @@
                 android:textSize="20sp" />
         </com.google.android.material.card.MaterialCardView>
 
-
-        <TableLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:orientation="vertical"
-            android:stretchColumns="*">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TableRow
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="2">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
                     android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
                     android:clickable="true"
                     android:focusable="true">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -74,22 +72,23 @@
 
                         <TextView
                             android:id="@+id/mon_ex"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginTop="4dp"
                             android:text="Exercise" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
                     android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
                     android:clickable="true"
                     android:focusable="true">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -102,30 +101,31 @@
 
                         <TextView
                             android:id="@+id/tue_ex"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginTop="4dp"
                             android:text="Exercise" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
-            </TableRow>
+            </LinearLayout>
 
-            <TableRow
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="2"
-                android:layout_marginTop="8dp">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
                     android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
                     android:clickable="true"
                     android:focusable="true">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -138,22 +138,23 @@
 
                         <TextView
                             android:id="@+id/wed_ex"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginTop="4dp"
-                            android:text="Exercise" />/>
+                            android:text="Exercise" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
                     android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
                     android:clickable="true"
                     android:focusable="true">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -166,30 +167,32 @@
 
                         <TextView
                             android:id="@+id/thru_ex"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginTop="4dp"
                             android:text="Exercise" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
-            </TableRow>
 
-            <TableRow
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="2"
-                android:layout_marginTop="8dp">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
                     android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
                     android:clickable="true"
                     android:focusable="true">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -202,22 +205,23 @@
 
                         <TextView
                             android:id="@+id/fri_ex"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginTop="4dp"
-                            android:text="Exercise" />/>
+                            android:text="Exercise" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
                     android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
                     android:clickable="true"
                     android:focusable="true">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -230,30 +234,32 @@
 
                         <TextView
                             android:id="@+id/sat_ex"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginTop="4dp"
                             android:text="Exercise" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
-            </TableRow>
 
-            <TableRow
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="2"
-                android:layout_marginTop="8dp">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
                     android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
                     android:clickable="true"
                     android:focusable="true">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -266,21 +272,48 @@
 
                         <TextView
                             android:id="@+id/sun_ex"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginTop="4dp"
                             android:text="Exercise" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
+                <!--                Invisible card to make sure Sunday card doesn't occupy entire width of screen-->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
 
-            </TableRow>
+                    android:alpha="0"
+                    android:clickable="true"
+                    android:focusable="true">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
-        </TableLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sunday"
+                            android:textSize="16sp" />
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Exercise" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
-
 
 </ScrollView>
