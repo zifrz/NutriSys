@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".NutritionFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:paddingHorizontal="28dp"
         android:paddingVertical="32dp">
 
@@ -19,34 +18,30 @@
             android:layout_height="wrap_content"
             android:paddingVertical="10dp"
             android:text="Nutrition"
-            android:textSize="24sp"
+            android:textSize="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <com.google.android.material.card.MaterialCardView
+        <SearchView
+            android:id="@+id/searchView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:layout_marginTop="16dp"
-            app:cardCornerRadius="100dp"
-            app:cardElevation="1dp">
-
-            <SearchView
-                android:id="@+id/searchView"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:inputType="text"
-                android:queryHint="Search Something"
-                app:iconifiedByDefault="false" />
-        </com.google.android.material.card.MaterialCardView>
+            android:inputType="text"
+            android:queryHint="Search Something"
+            app:iconifiedByDefault="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/screenHeader_nutrition" />
 
         <TextView
             android:id="@+id/popularItems"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginVertical="32dp"
+
             android:paddingVertical="10dp"
-            android:text="Most Nutritious Products"
+            android:text="Popular Items"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView" />
@@ -55,8 +50,9 @@
             android:id="@+id/popularItemsScrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:scrollbars="none">
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@+id/popularItems"
+            tools:layout_editor_absoluteX="28dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -68,6 +64,7 @@
                     android:id="@+id/item1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
                     android:layout_marginRight="8dp"
                     android:clickable="true"
                     android:focusable="true"
@@ -115,6 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="14dp"
                     android:clickable="true"
                     android:focusable="true"
                     app:cardElevation="1dp"
@@ -161,6 +159,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="14dp"
                     android:clickable="true"
                     android:fadingEdge="horizontal"
                     android:fadingEdgeLength="16dp"
@@ -214,7 +213,8 @@
             android:id="@+id/commonDeficiencies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginVertical="32dp"
+
             android:paddingVertical="10dp"
             android:text="Common Deficiencies"
             android:textSize="20sp"
@@ -225,7 +225,6 @@
             android:id="@+id/commonDeficienciesScrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
             android:scrollbars="none"
             app:layout_constraintTop_toBottomOf="@+id/commonDeficiencies">
 
@@ -239,6 +238,7 @@
                     android:id="@+id/item4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
                     android:layout_marginRight="8dp"
                     android:clickable="true"
                     android:focusable="true"
@@ -283,6 +283,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="14dp"
                     android:clickable="true"
                     android:focusable="true"
                     app:cardElevation="1dp"
@@ -326,11 +327,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="14dp"
                     android:clickable="true"
                     android:fadingEdge="horizontal"
                     android:fadingEdgeLength="16dp"
+
                     android:focusable="true"
                     app:cardElevation="1dp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/exploreSection"
                     app:strokeWidth="0dp">
 
 
@@ -372,5 +378,5 @@
         </HorizontalScrollView>
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
