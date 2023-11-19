@@ -1,20 +1,31 @@
 package com.nutrisysteam.nutrisys
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.nutrisysteam.nutrisys.databinding.ActivityWeeklyExerciseBinding
-import java.util.*
-import kotlin.math.log
 
-class WeeklyExerciseActivity : AppCompatActivity() {
+class WeeklyExerciseActivity : AppCompatActivity()  {
 
     companion object {
         const val EXERCISE = "EXERCISE"
         const val CALISTHENICS = "CALISTHENICS"
         const val WEIGHT_LOSS = "WEIGHT_LOSS"
         const val MUSCLE_GAIN = "MUSCLE_GAIN"
+        const val DAY_OF_WEEK = "DAY"
+        const val MONDAY = "MONDAY"
+        const val TUESDAY = "TUESDAY"
+        const val WEDNESDAY = "WEDNESDAY"
+        const val THURSDAY = "THURSDAY"
+        const val FRIDAY = "FRIDAY"
+        const val SATURDAY = "SATURDAY"
+        const val SUNDAY = "SUNDAY"
+
     }
+
+    private lateinit var nextIntent: Intent
 
     private var _binding: ActivityWeeklyExerciseBinding? = null
     private val binding get() = _binding!!
@@ -35,7 +46,10 @@ class WeeklyExerciseActivity : AppCompatActivity() {
         }
         setWeeklyData(value.toString())
 
+        nextIntent = Intent(this@WeeklyExerciseActivity,DetailExerciseActivity::class.java)
+        nextIntent.putExtra(EXERCISE,value.toString())
 
+        sendDataTONextActivity()
 
     }
 
@@ -66,6 +80,37 @@ class WeeklyExerciseActivity : AppCompatActivity() {
             binding.friEx.text = getString(R.string.mg_fir)
             binding.satEx.text = getString(R.string.mg_sat)
             binding.sunEx.text = getString(R.string.mg_sun)
+        }
+    }
+
+    private fun sendDataTONextActivity() {
+        binding.cardMon.setOnClickListener {
+            nextIntent.putExtra(DAY_OF_WEEK, MONDAY)
+            startActivity(nextIntent)
+        }
+        binding.cardTue.setOnClickListener {
+            nextIntent.putExtra(DAY_OF_WEEK, TUESDAY)
+            startActivity(nextIntent)
+        }
+        binding.cardWed.setOnClickListener {
+            nextIntent.putExtra(DAY_OF_WEEK, WEDNESDAY)
+            startActivity(nextIntent)
+        }
+        binding.cardThu.setOnClickListener {
+            nextIntent.putExtra(DAY_OF_WEEK, THURSDAY)
+            startActivity(nextIntent)
+        }
+        binding.cardFri.setOnClickListener {
+            nextIntent.putExtra(DAY_OF_WEEK, FRIDAY)
+            startActivity(nextIntent)
+        }
+        binding.cardSat.setOnClickListener {
+            nextIntent.putExtra(DAY_OF_WEEK, SATURDAY)
+            startActivity(nextIntent)
+        }
+        binding.cardSun.setOnClickListener {
+            nextIntent.putExtra(DAY_OF_WEEK, SUNDAY)
+            startActivity(nextIntent)
         }
     }
 
