@@ -51,6 +51,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardMon"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginRight="4dp"
@@ -80,6 +81,7 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardTue"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginLeft="4dp"
@@ -117,6 +119,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardWed"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginRight="4dp"
@@ -146,6 +149,7 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardThu"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginLeft="4dp"
@@ -184,6 +188,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardFri"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginRight="4dp"
@@ -213,6 +218,7 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardSat"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginLeft="4dp"
@@ -251,6 +257,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardSun"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginRight="4dp"
