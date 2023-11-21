@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Exercise1Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginVertical="32dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTimer"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:backgroundTint="#ece6f0"
+            android:elevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp">
+
+                <ProgressBar
+                    android:id="@+id/circularProgressBar"
+                    android:layout_width="400dp"
+                    android:layout_height="350dp"
+                    android:layout_centerInParent="true"
+                    android:indeterminateOnly="false"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+
+                <TextView
+                    android:id="@+id/timeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/circularProgressBar"
+                    android:layout_alignTop="@id/circularProgressBar"
+                    android:layout_alignEnd="@id/circularProgressBar"
+                    android:layout_alignBottom="@id/circularProgressBar"
+                    android:gravity="center"
+                    android:text="02:00"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/circularProgressBar"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/startBtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="18dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/play" />
+
+                        <ImageButton
+                            android:id="@+id/pauseBtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="15dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pause" />
+
+                        <ImageButton
+                            android:id="@+id/resumeBtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="15dp"
+                            android:src="@drawable/resume" />
+
+                        <ImageButton
+                            android:id="@+id/resetBtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="15dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/replay" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="900dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="22sp"
+            android:backgroundTint="#ece6f0"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTimer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="900dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/exerciseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exercise Name"
+                    android:textSize="24sp"
+                    android:layout_margin="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/primeMuscle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prime Muscle"
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/exeDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is Exercise Description"
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/exerciseOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:src="@drawable/calisthenics_image"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:id="@+id/exerciseTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:src="@drawable/weight_loss_image"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

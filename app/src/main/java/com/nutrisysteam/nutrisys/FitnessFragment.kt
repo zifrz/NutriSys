@@ -68,6 +68,7 @@ class FitnessFragment : Fragment() {
                     Log.e("MY_TAG", "Calisthenics Data Received ")
                     val list: ArrayList<ExerciseItem> = response.body()!!
                     Constants.setCalisthenicsList(list)
+                    logData(list)
                 } else {
                     Log.e("MY_TAG", "Response get")
                 }
@@ -87,6 +88,7 @@ class FitnessFragment : Fragment() {
                     Log.e("MY_TAG", "Weight Loss Data Received ")
                     val list: ArrayList<ExerciseItem> = response.body()!!
                     Constants.setWeightLossList(list)
+                    logData(list)
                 } else {
                     Log.e("MY_TAG", "Request received")
                 }
@@ -107,6 +109,7 @@ class FitnessFragment : Fragment() {
                     Log.e("MY_TAG", "Muscle Gain  Data Received ")
                     val list: ArrayList<ExerciseItem> = response.body()!!
                     Constants.setMuscleGainList(list)
+                    logData(list)
                 } else {
                     Log.e("MY_TAG", "Request received")
                 }
@@ -120,6 +123,18 @@ class FitnessFragment : Fragment() {
         })
     }
 
+    fun logData(list: ArrayList<ExerciseItem>) {
+        for(i in list) {
+            Log.e("DATA",i._id)
+            Log.e("DATA", i.NAME)
+            Log.e("DATA",i.CAL_INSTRUCTION)
+            Log.e("DATA",i.PRIM_MUSCLE)
+            Log.e("DATA",i.CATEGORY)
+            Log.e("DATA",i.DAY_OF_THE_WEEK)
+            Log.e("DATA",i.URL_1)
+            Log.e("DATA",i.URL_2)
+        }
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
