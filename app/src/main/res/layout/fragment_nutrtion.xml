@@ -23,16 +23,30 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <SearchView
+
+
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="16dp"
-            android:inputType="text"
-            android:queryHint="Search Something"
-            app:iconifiedByDefault="false"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="#e6e0e9"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/screenHeader_nutrition" />
+            app:layout_constraintTop_toBottomOf="@+id/screenHeader_nutrition"
+            >
+            <TextView
+                android:id="@+id/tvSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                android:text="  Nutritional Deficiencies..."
+                android:textSize="20sp"
+                android:drawableStart="@drawable/search"
+                android:layout_margin="10dp"
+                />
+        </com.google.android.material.card.MaterialCardView>
 
         <TextView
             android:id="@+id/popularItems"

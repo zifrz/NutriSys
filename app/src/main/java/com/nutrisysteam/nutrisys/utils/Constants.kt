@@ -1,6 +1,8 @@
 package com.nutrisysteam.nutrisys.utils
 
 import com.nutrisysteam.nutrisys.models.ExerciseItem
+import com.nutrisysteam.nutrisys.models.NutritionsItem
+import com.nutrisysteam.nutrisys.models.Product
 
 object Constants {
 
@@ -33,4 +35,24 @@ object Constants {
         this.muscleGainList = muscleGainList
     }
 
+    private var nutritionsItem = ArrayList<NutritionsItem>()
+
+
+    fun setNutritionItems(nutritionsItem : ArrayList<NutritionsItem>) {
+        this.nutritionsItem = nutritionsItem
+    }
+
+    fun getNutritionItems() : ArrayList<NutritionsItem> {
+        return this.nutritionsItem
+    }
+
+    private var productList = ArrayList<Product>()
+
+    fun getProductList(): ArrayList<Product> {
+        return this.productList
+    }
+
+    fun setProductList(productList : ArrayList<Product>) {
+        this.productList = productList
+    }
 }
