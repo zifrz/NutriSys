@@ -103,6 +103,7 @@
 
 
                             <ImageView
+                                android:id="@+id/ivItemOnePopular"
                                 android:layout_width="128dp"
                                 android:layout_height="128dp"
                                 android:background="@color/cardview_shadow_start_color"
@@ -111,6 +112,7 @@
                         </com.google.android.material.card.MaterialCardView>
 
                         <TextView
+                            android:id="@+id/tvItemOneNamePopular"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="16dp"
@@ -150,6 +152,7 @@
 
 
                             <ImageView
+                                android:id="@+id/ivItemTwoPopular"
                                 android:layout_width="128dp"
                                 android:layout_height="128dp"
                                 android:background="@color/cardview_shadow_start_color"
@@ -158,6 +161,7 @@
                         </com.google.android.material.card.MaterialCardView>
 
                         <TextView
+                            android:id="@+id/tvItemTwoNamePopular"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="16dp"
@@ -200,6 +204,7 @@
 
 
                             <ImageView
+                                android:id="@+id/ivItemThreePopular"
                                 android:layout_width="128dp"
                                 android:layout_height="128dp"
                                 android:background="@color/cardview_shadow_start_color"
@@ -208,6 +213,7 @@
                         </com.google.android.material.card.MaterialCardView>
 
                         <TextView
+                            android:id="@+id/tvItemThreeNamePopular"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="16dp"
@@ -274,6 +280,7 @@
 
 
                             <ImageView
+                                android:id="@+id/ivOneCD"
                                 android:layout_width="128dp"
                                 android:layout_height="128dp"
                                 android:background="@color/cardview_shadow_start_color"
@@ -282,6 +289,7 @@
                         </com.google.android.material.card.MaterialCardView>
 
                         <TextView
+                            android:id="@+id/tvOneCD"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="16dp"
@@ -318,6 +326,7 @@
 
 
                             <ImageView
+                                android:id="@+id/ivTwoCD"
                                 android:layout_width="128dp"
                                 android:layout_height="128dp"
                                 android:background="@color/cardview_shadow_start_color"
@@ -326,6 +335,7 @@
                         </com.google.android.material.card.MaterialCardView>
 
                         <TextView
+                            android:id="@+id/tvTwoCD"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="16dp"
@@ -368,6 +378,7 @@
 
 
                             <ImageView
+                                android:id="@+id/ivThreeCD"
                                 android:layout_width="128dp"
                                 android:layout_height="128dp"
                                 android:background="@color/cardview_shadow_start_color"
@@ -376,6 +387,7 @@
                         </com.google.android.material.card.MaterialCardView>
 
                         <TextView
+                            android:id="@+id/tvThreeCD"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="16dp"
